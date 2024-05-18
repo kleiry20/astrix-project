@@ -1,0 +1,18 @@
+.headerContainer {
+  color: var(--color-yellow);
+  display: flex;
+  align-items: center;
+  /* width: 60%; */
+  padding: 1rem;
+  gap: 0.8rem;
+
+  /* remove later */
+  height: 4rem;
+  border: 1px solid;
+}
+
+.headerTitle {
+  font-size: 2rem;
+  margin: 0;
+  font-family: var(--font-roboto);
+}

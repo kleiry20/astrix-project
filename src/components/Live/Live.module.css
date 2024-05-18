@@ -1,0 +1,5 @@
+.live {
+  background-color: var(--color-purple);
+  position: relative;
+  z-index: 2;
+}

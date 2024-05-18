@@ -1,0 +1,24 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 6rem;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.h1Style {
+  text-transform: uppercase;
+  color: var(--color-light-gray);
+  font-size: 6rem;
+}

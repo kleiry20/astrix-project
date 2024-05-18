@@ -1,0 +1,7 @@
+.btn {
+  background-color: none;
+}
+
+.btnYellow {
+  background-color: var(--color-yellow);
+}

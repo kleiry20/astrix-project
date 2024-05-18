@@ -1,0 +1,16 @@
+.card {
+  height: 10rem;
+  width: 10rem;
+  border: 1px solid yellow;
+  border-radius: 0.5rem;
+}
+
+.cardSm {
+  height: 10rem;
+  width: 10rem;
+}
+
+.cardLg {
+  height: 40rem;
+  width: 40rem;
+}
