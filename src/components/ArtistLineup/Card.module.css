@@ -1,16 +1,33 @@
 .card {
   height: 10rem;
   width: 10rem;
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   border-radius: 0.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.cardSm {
+.cardSmall {
   height: 10rem;
   width: 10rem;
 }
 
-.cardLg {
-  height: 40rem;
-  width: 40rem;
+.cardLarge {
+  height: 34rem;
+  /* width: 38rem; */
+  width: 50rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    height: 8rem;
+    width: 8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    height: 5rem;
+    width: 5rem;
+  }
 }

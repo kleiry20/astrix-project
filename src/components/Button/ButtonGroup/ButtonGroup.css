@@ -1,0 +1,53 @@
+.button-group {
+  position: relative;
+  display: flex;
+  width: 250px; /* Adjust based on your button sizes */
+  height: 40px; /* Adjust based on your button sizes */
+  /* border: 1px solid #ccc; */
+  background-color: var(--color-btn-bg);
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button-group input[type="radio"] {
+  display: none;
+}
+
+.button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 500;
+  z-index: 1; /* Make sure buttons are above the slider */
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%; /* Assuming two buttons, adjust accordingly */
+  background-color: var(--color-btn-active);
+  border-radius: 30px;
+  transition: transform 0.3s ease;
+  z-index: 0; /* Slider should be below the buttons */
+}
+
+#button1:checked ~ .slider {
+  transform: translateX(0%);
+}
+
+#button2:checked ~ .slider {
+  transform: translateX(100%);
+}
+
+.button-group input[type="radio"]:checked + .button {
+  color: #fff;
+}
+
+.button-group input[type="radio"] + .button {
+  color: #fff;
+  transition: color 0.3s ease;
+}
