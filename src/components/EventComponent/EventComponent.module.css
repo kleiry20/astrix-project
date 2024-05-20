@@ -32,6 +32,7 @@
 .qrIcon {
   height: 5.235rem;
   width: 5.235rem;
+  cursor: pointer;
 }
 
 .btnYellow {
@@ -43,6 +44,7 @@
   font-weight: 900;
   font-size: 1.125rem;
   padding: 0.5rem 1rem;
+  cursor: pointer;
 }
 
 .smMidCard {

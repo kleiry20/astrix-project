@@ -51,7 +51,9 @@ const EventComponent = () => {
       </div>
 
       <div className={styles.footer}>
-        <img className={styles.qrIcon} src={QR} alt="qr-code" />
+        <a href="">
+          <img className={styles.qrIcon} src={QR} alt="qr-code" />
+        </a>
         <button className={styles.btnYellow}>Join Waitlist</button>
       </div>
     </div>
