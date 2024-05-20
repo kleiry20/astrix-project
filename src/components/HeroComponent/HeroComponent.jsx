@@ -44,8 +44,8 @@ const CollectionView = () => {
 
       <div className={styles.heroCardDiv}>
         <div className={styles.heroCardWrapper}>
-          <Card image={Event1} size={"large"} />
           <Card image={Event2} size={"large"} />
+          <Card image={Event3} size={"large"} />
           {/* <Card image={Event3} size={"large"} /> */}
         </div>
       </div>

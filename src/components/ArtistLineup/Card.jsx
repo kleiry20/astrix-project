@@ -2,7 +2,7 @@ import styles from "./Card.module.css";
 import PropTypes from "prop-types";
 
 // assets
-import Event2 from "../../assets/events/event2.jpg";
+import Event3 from "../../assets/events/event3.jpg";
 
 const Card = (props) => {
   return (
@@ -34,7 +34,7 @@ Card.propTypes = {
 };
 
 Card.defaultProps = {
-  image: Event2,
+  image: Event3,
 };
 
 export default Card;

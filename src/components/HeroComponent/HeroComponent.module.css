@@ -17,25 +17,28 @@
 
 .contentDiv {
   height: 38rem;
-  /* border: 1px solid; */
+  /* border: 1px solid white; */
   display: flex;
+  gap: 14px;
 }
 
 .mainBg {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
+  /* border: 1px solid blue; */
+  min-width: 17rem;
 }
 
 .h1Style {
   text-transform: uppercase;
   color: var(--color-light-gray);
-  font-size: 6.4rem;
+  font-size: 6rem;
   word-wrap: break-word;
 }
 
 .heroCardDiv {
-  max-width: 40rem;
+  max-width: 35rem;
   display: flex;
   align-items: flex-end;
 }
@@ -43,7 +46,7 @@
 .heroCardWrapper {
   overflow-x: scroll;
   display: flex;
-  gap: 30px;
+  gap: 20px;
 }
 
 /* media queries */
