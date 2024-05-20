@@ -1,6 +1,4 @@
 .card {
-  height: 10rem;
-  width: 10rem;
   border-radius: 0.5rem;
   background-size: cover;
   background-repeat: no-repeat;
@@ -22,17 +20,30 @@
   transform: scale(1.1);
 }
 
-
 @media screen and (max-width: 1024px) {
-  .card {
-    height: 8rem;
-    width: 8rem;
+  .cardLarge {
+    height: 30rem;
+    width: 18rem;
+  }
+  .cardSmall {
+    transition: transform 0.3s ease;
+  }
+  .cardSmall:hover {
+    transform: scale(1.2);
   }
 }
 
 @media screen and (max-width: 768px) {
-  .card {
-    height: 5rem;
-    width: 5rem;
+  .cardLarge {
+    height: 26rem;
+    width: 17rem;
+  }
+  .cardSmall {
+    height: 14rem;
+    width: 14rem;
+    transition: transform 0.3s ease;
+  }
+  .cardSmall:hover {
+    transform: scale(1.1);
   }
 }

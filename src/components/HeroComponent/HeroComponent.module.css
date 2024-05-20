@@ -56,20 +56,36 @@
 }
 
 /* media queries */
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .hero {
     width: 56%;
   }
+  .h1Style {
+    font-size: 4.6rem;
+  }
+  .contentDiv {
+    height: 36rem;
+  }
+  .heroCardDiv {
+    top: 9rem;
+  }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .hero {
     width: 100%;
   }
-  .main {
-    padding: 1.5rem;
-  }
   .h1Style {
-    font-size: 4.5rem;
+    font-size: 4rem;
+  }
+  .contentDiv {
+    height: 30rem;
+  }
+  .heroCardDiv {
+    top: 7rem;
+    max-width: 95vw;
+  }
+  .mainBg {
+    max-width: 15rem;
   }
 }

@@ -1,21 +1,21 @@
 .live {
   background-color: var(--color-purple);
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 61%;
   height: 100vh;
-  width: 62px;
+  width: 3.875rem;
 }
 
 .live h3 {
   position: absolute;
   color: var(--color-black);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: "Roboto";
   font-weight: 500;
-  letter-spacing: 2px;
-  left: -383px;
-  width: 830px;
+  letter-spacing: 0.125rem;
+  left: -23.938rem;
+  width: 51.875rem;
 }
 
 /* animation */
@@ -35,15 +35,59 @@
 /* Animations */
 @keyframes slideIn {
   from {
-    transform: rotate(90deg) translateX(-300px);
+    transform: rotate(90deg) translateX(-18.75rem);
   }
 
   to {
-    transform: rotate(90deg) translateX(430px);
+    transform: rotate(90deg) translateX(26.875rem);
   }
 }
 
 .slideIn {
   animation-name: slideIn;
   animation-timing-function: ease;
+}
+
+/* media query */
+@media screen and (max-width: 1024px) {
+  .live {
+    left: 58%;
+    height: 46rem;
+    width: 3.125rem;
+  }
+  .live h3 {
+    position: absolute;
+    color: var(--color-black);
+    font-size: 1.2rem;
+    font-family: "Roboto";
+    font-weight: 500;
+    letter-spacing: 0.125rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .live {
+    height: 3rem;
+    margin-top: 3rem;
+    width: 100%;
+    position: static;
+  }
+  .live h3 {
+    position: static;
+    font-size: 1.2rem;
+    font-family: "Roboto";
+    font-weight: 500;
+    letter-spacing: 0.125rem;
+    margin-top: 13px;
+    width: auto;
+  }
+  @keyframes slideIn {
+    from {
+      transform: translateX(-18.75rem);
+    }
+
+    to {
+      transform: translateX(5rem);
+    }
+  }
 }

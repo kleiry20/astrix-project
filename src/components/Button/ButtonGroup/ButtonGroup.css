@@ -50,3 +50,16 @@
   color: #fff;
   transition: color 0.3s ease;
 }
+
+@media screen and (max-width: 768px) {
+  .button-group {
+    height: 46px;
+    left: 15rem;
+  }
+  .button-group input[type="radio"] + .button {
+    transition: color 0.3s ease;
+  }
+  .slider {
+    transition: transform 0.3s ease;
+  }
+}
