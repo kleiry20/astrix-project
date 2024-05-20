@@ -6,6 +6,11 @@ import Card from "../ArtistLineup/Card";
 // assets
 import Event2 from "../../assets/events/event2.jpg";
 import Event3 from "../../assets/events/event3.jpg";
+import Event5 from "../../assets/events/event5.jpg";
+import Loc1 from "../../assets/loc1.jpg";
+import Loc3 from "../../assets/loc3.jpg";
+import Loc5 from "../../assets/loc5.jpg";
+
 import ButtonGroup from "../Button/ButtonGroup/ButtonGroup";
 
 const HeroComponent = () => {
@@ -54,9 +59,9 @@ const CollectionView = () => {
 
       <div className={`${styles.heroCardDiv}`}>
         <div className={`${styles.heroCardWrapper}`} id="herocardwrapper">
-          <Card image={Event2} size={"large"} />
-          <Card image={Event3} size={"large"} />
-          <Card image={Event3} size={"large"} />
+          <Card image={Loc5} size={"large"} />
+          <Card image={Loc1} size={"large"} />
+          <Card image={Loc3} size={"large"} />
         </div>
       </div>
     </>
@@ -75,13 +80,9 @@ const EventView = () => {
         <div className={`${styles.heroCardWrapper}`}>
           <Card image={Event3} size={"large"} />
           <Card image={Event2} size={"large"} />
-          <Card image={Event3} size={"large"} />
+          <Card image={Event5} size={"large"} />
         </div>
       </div>
     </>
   );
 };
-
-// const ContentDiv = () => {
-//   return <div>contentdiv</div>;
-// };

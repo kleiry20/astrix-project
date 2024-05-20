@@ -77,7 +77,7 @@ p {
 } */
 
 .animate {
-  animation: slideIn 6s ease 1;
+  animation: slideIn 6s ease infinite;
 }
 
 @keyframes slideIn {
