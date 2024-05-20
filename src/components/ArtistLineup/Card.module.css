@@ -1,22 +1,27 @@
 .card {
   height: 10rem;
   width: 10rem;
-  /* border: 1px solid yellow; */
   border-radius: 0.5rem;
   background-size: cover;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .cardSmall {
   height: 10rem;
   width: 10rem;
+  transition: transform 0.3s ease;
 }
 
 .cardLarge {
   height: 34rem;
-  /* width: 38rem; */
-  width: 50rem;
+  width: 20rem;
 }
+
+.cardSmall:hover {
+  transform: scale(1.1);
+}
+
 
 @media screen and (max-width: 1024px) {
   .card {

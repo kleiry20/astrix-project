@@ -1,9 +1,8 @@
 .button-group {
   position: relative;
   display: flex;
-  width: 250px; /* Adjust based on your button sizes */
-  height: 40px; /* Adjust based on your button sizes */
-  /* border: 1px solid #ccc; */
+  width: 250px;
+  height: 40px;
   background-color: var(--color-btn-bg);
   border-radius: 30px;
   overflow: hidden;
@@ -21,18 +20,18 @@
   justify-content: center;
   cursor: pointer;
   font-weight: 500;
-  z-index: 1; /* Make sure buttons are above the slider */
+  z-index: 1;
 }
 
 .slider {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 50%; /* Assuming two buttons, adjust accordingly */
+  width: 50%;
   background-color: var(--color-btn-active);
   border-radius: 30px;
   transition: transform 0.3s ease;
-  z-index: 0; /* Slider should be below the buttons */
+  z-index: 0;
 }
 
 #button1:checked ~ .slider {

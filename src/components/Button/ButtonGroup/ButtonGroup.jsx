@@ -10,7 +10,7 @@ const ButtonGroup = ({ onButtonClick }) => {
 
   const handleButtonClick = (button) => {
     setActiveButton(button);
-    onButtonClick(button); // Notify the parent component
+    onButtonClick(button);
   };
 
   return (

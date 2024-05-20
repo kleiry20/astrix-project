@@ -1,36 +1,19 @@
-/* .live {
-  background-color: var(--color-purple);
-  position: relative;
-  z-index: 2;
-} */
-
 .live {
   background-color: var(--color-purple);
   position: absolute;
   top: 0px;
-  left: 62%;
+  left: 61%;
   height: 100vh;
   width: 62px;
 }
 
 .live h3 {
   position: absolute;
-  /* bottom: 300px;
-  left: -469px;
-  width: 1000px; */
   color: var(--color-black);
   font-size: 24px;
   font-family: "Roboto";
   font-weight: 500;
   letter-spacing: 2px;
-  /* border: 1px solid red; */
-
-  /* trying to fix */
-  /* bottom: 300px; */
-  /* left: -427px;
-  top: 0;
-  width: 912px; */
-
   left: -383px;
   width: 830px;
 }
@@ -50,7 +33,7 @@
 }
 
 /* Animations */
-@keyframes slideInLeft {
+@keyframes slideIn {
   from {
     transform: rotate(90deg) translateX(-300px);
   }
@@ -58,17 +41,9 @@
   to {
     transform: rotate(90deg) translateX(430px);
   }
-
-  /* 0% {
-    transform: rotate(90deg) translateX(-300px);
-  }
-
-  100% {
-    transform: rotate(90deg) translateX(430px);
-  } */
 }
 
-.slideInLeft {
-  animation-name: slideInLeft;
+.slideIn {
+  animation-name: slideIn;
   animation-timing-function: ease;
 }

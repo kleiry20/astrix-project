@@ -1,10 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "../Header/Header";
 import styles from "./HeroComponent.module.css";
 import Card from "../ArtistLineup/Card";
 
 // assets
-import Event1 from "../../assets/events/event1.jpg";
 import Event2 from "../../assets/events/event2.jpg";
 import Event3 from "../../assets/events/event3.jpg";
 import ButtonGroup from "../Button/ButtonGroup/ButtonGroup";
@@ -17,12 +16,23 @@ const HeroComponent = () => {
     setContent(button === "button1" ? <EventView /> : <CollectionView />);
   };
 
+  useEffect(() => {
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach((card) => {
+      card.addEventListener("animationstart", () => {
+        card.classList.add("focus");
+      });
+
+      card.addEventListener("animationend", () => {
+        card.classList.remove("focus");
+      });
+    });
+  });
+
   return (
     <div className={styles.hero}>
       <Header />
-
-      {/* {view === "event-view" && <EventView />}
-      {view === "collection-view" && <CollectionView />} */}
 
       <div className={styles.contentWrapper}>
         <div className={styles.contentDiv}>{content}</div>
@@ -42,11 +52,11 @@ const CollectionView = () => {
         <h1 className={styles.h1Style}>coll ecti ble</h1>
       </div>
 
-      <div className={styles.heroCardDiv}>
-        <div className={styles.heroCardWrapper}>
+      <div className={`${styles.heroCardDiv}`}>
+        <div className={`${styles.heroCardWrapper}`} id="herocardwrapper">
           <Card image={Event2} size={"large"} />
           <Card image={Event3} size={"large"} />
-          {/* <Card image={Event3} size={"large"} /> */}
+          <Card image={Event3} size={"large"} />
         </div>
       </div>
     </>
@@ -61,11 +71,11 @@ const EventView = () => {
         <h1 className={styles.h1Style}>eve nts</h1>
       </div>
 
-      <div className={styles.heroCardDiv}>
-        <div className={styles.heroCardWrapper}>
+      <div className={`${styles.heroCardDiv}`}>
+        <div className={`${styles.heroCardWrapper}`}>
           <Card image={Event3} size={"large"} />
           <Card image={Event2} size={"large"} />
-          {/* <Card image={Event3} size={"large"} /> */}
+          <Card image={Event3} size={"large"} />
         </div>
       </div>
     </>

@@ -9,7 +9,9 @@ const Card = (props) => {
     <>
       {props.size == "small" && (
         <div
-          className={`${styles.card} ${styles.cardSmall}`}
+          className={`${styles.card} ${styles.cardSmall} ${
+            props.isMiddle ? styles.middleCard : ""
+          }`}
           style={{
             backgroundImage: `url(${props.image})`,
           }}
@@ -18,7 +20,7 @@ const Card = (props) => {
 
       {props.size == "large" && (
         <div
-          className={`${styles.card} ${styles.cardLarge}`}
+          className={`${styles.card} ${styles.cardLarge} animate`}
           style={{
             backgroundImage: `url(${props.image})`,
           }}
@@ -31,6 +33,7 @@ const Card = (props) => {
 Card.propTypes = {
   image: PropTypes.string,
   size: PropTypes.string,
+  isMiddle: PropTypes.bool,
 };
 
 Card.defaultProps = {

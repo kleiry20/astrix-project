@@ -5,12 +5,7 @@ import "../../App.css";
 const Header = () => {
   return (
     <nav className={styles.headerContainer}>
-      <img
-        className={`${styles.logoIcon}  rotate`}
-        src={logoIcon}
-        alt="icon"
-        // height={60} width={60}
-      />
+      <img className={`${styles.logoIcon}  rotate`} src={logoIcon} alt="icon" />
       <h3 className={styles.headerTitle}>Astrix.</h3>
     </nav>
   );
